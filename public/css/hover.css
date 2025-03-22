@@ -1,0 +1,40 @@
+.galleryadv {
+    margin-left: 144px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.galleryadv > div {
+    position: relative;
+    display: inline-block;
+}
+
+.galleryadv > div > img {
+    transition: 0.3s ease;
+    height: 280px;
+    width: auto;
+}
+
+.galleryadv > div:hover > img {
+    filter: blur(4px); /* Apply blur on hover */
+}
+
+.price-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.galleryadv > div:hover .price-overlay {
+    opacity: 1; /* Show price on hover */
+}

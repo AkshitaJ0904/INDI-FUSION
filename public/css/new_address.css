@@ -1,0 +1,144 @@
+*{
+    padding: 0;margin: 0;
+    
+    
+}
+
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:105px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+.label{
+    font-size: 3.5em;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 180px 1150px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    
+}
+hr{
+    color:white;
+}
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 40px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar .active {
+    font-weight: bold;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+h1 {
+    color: #8b4513;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.footflex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 40px;
+
+}
+footer{
+    background-color: #6E7F77;
+    height:400px;
+}
+.footinfo1{
+    color:white;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 1.4em;
+    
+}
+.footinfo{
+    text-align: left;
+    color:white;
+    font-size: larger;
+}

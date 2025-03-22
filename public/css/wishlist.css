@@ -1,0 +1,127 @@
+*{
+    padding: 0;margin: 0;
+    
+    
+}
+
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:105px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+ a{
+    text-decoration: none;
+}
+
+.label{
+    font-size: 3.5em;
+    color:white;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 180px 1150px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    
+}
+.fashion{
+    color:white;
+    text-decoration: none;
+}
+hr{
+    color:white;
+}
+/* Main Content Styles */
+.container1 {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.sidebar ul li.active {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.wishlist-content {
+    flex-grow: 1;
+}
+
+.wishlist-content h2 {
+    font-family: 'Amita', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.wishlist-row {
+    display: flex;              /* Use flex to arrange items in a row */
+    gap:20px;   
+    margin-bottom: 20px;       /* Space below each row */
+}
+
+.item {
+    text-align: center;
+    width: calc(33.33% - 20px); /* Each item takes up about a third of the row */
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.small-text {
+    font-size: 14px; /* Smaller font for descriptions */
+    color: #555;
+}

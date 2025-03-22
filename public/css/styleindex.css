@@ -1,0 +1,367 @@
+*{
+    padding: 0;margin: 0;
+    
+    
+}
+
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:105px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+.label{
+    font-size: 3.5em;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 180px 1150px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    color:white;
+    text-decoration: none;
+    
+}
+.fashion , .homedecor , .bestsell , .about{
+    color:white;
+    text-decoration: none;
+}
+.artgallery{
+    color:white;
+    text-decoration: none;
+}
+hr{
+    color:white;
+}
+
+.elephant>img{
+   width: 100%;
+   height:800px;
+   
+}
+ 
+
+.collectionbar{
+    height:280px;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: #6E7F77;
+    
+}
+.pottery>img{
+    border-radius: 50%;
+    
+}
+.jewellery>img{
+    border-radius: 50%;
+}
+.wallhangs>img{
+    border-radius: 50%;
+}
+.coture>img{
+    border-radius: 50%;
+}
+.paintings>img{
+    border-radius: 50%;
+}
+.pottery , .jewellery , .wallhangs , .coture , .paintings{
+    color:white;
+}
+
+
+.labelsofcbar{
+    display:flex;
+    flex-direction: row;
+    
+    margin-top: 230px;
+    margin-left: 20px; 
+    position: absolute;
+    justify-content: space-around;
+    gap:245px;
+    color:white;
+    font-size: 20px;
+    
+
+}
+.head1{
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+.button0{
+    background-color:  #F3E9D5;
+    color:black;
+    border: solid brown;
+    height: 40px;
+    width:140px;
+    margin-left: 1335px;
+    
+}
+.backgroundpot{
+    position: relative;
+}
+.lines{
+   position: absolute;
+   margin-left: 25%;
+   margin-top: 148px;
+}
+.line1{
+    font-size: 2em;
+}
+.line2{
+    margin-left: 0px;
+    font-size: larger;
+}
+.button1{
+    background-color: black;
+    color:white;
+    height: 40px;
+    width:140px;
+    margin-left: 330px;
+    margin-top: 20px;
+}
+.head1{
+    margin-left: 20px;
+}
+.head2{
+    font-size: 2em;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 20px;
+}
+.potimgs{
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    grid-template-rows:230px 100px;
+    justify-items: center;
+    gap:30px;
+    margin:20px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.potimgs >div>img{
+    height:240px;
+}
+.button4{
+    background-color:  #F3E9D5;
+    color:black;
+    border: solid brown;
+    height: 40px;
+    width:140px;
+position: absolute;
+margin-top: 97px;
+margin-left: 1342px;
+
+
+
+}
+.coturesection{
+    display: grid;
+    grid-template-columns: 520px 520px 520px;
+    grid-template-rows:600px 100px;
+    justify-items: center;
+    margin-top:150px;
+    position: relative;
+    height:400px;
+    margin-bottom: 320px;
+    /* width:400px; */
+    
+}
+.coturesection>div>img{
+    height: 600px;
+}
+
+.red{
+    color:brown;
+}
+p{
+    text-align: center;
+}
+.headbig{
+    font-size: 3em;
+    margin:40px;
+    margin-left: 380px;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.decor{
+    display: flex;
+    position: relative;
+    margin-bottom: 50px;
+}
+.firstpara{
+    position: absolute;
+    height:100px;
+    width:226px;
+    margin-top: 250px;
+    margin-left: 120px;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    line-height: 40px;
+    font-family:'crimson text';
+}
+.button2{
+    position: absolute;
+    margin-left: 760px;
+    margin-top: 400px;
+    background-color:#912424;
+    color:white;
+    font-size: 15px;
+    border: 0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: underline;
+    text-decoration: underline;
+    
+}
+.artgalheading{
+    font-size: 3em;
+    margin-left: 600px;
+    margin-bottom: 30px;
+}
+.button5{
+    margin-left: 1227px;
+    margin-bottom: 10px;
+    background-color:  #F3E9D5;
+    color:black;
+    border: solid brown;
+    height: 40px;
+    width:140px;
+}
+.galleryadv {
+    margin-left: 144px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.galleryadv > div {
+    position: relative;
+    display: inline-block;
+}
+
+.galleryadv > div > img {
+    /* transition: 0.3s ease; */
+  
+}
+
+.galleryadv > div:hover > img {
+    filter: blur(4px); /* Apply blur on hover */
+}
+
+.price-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.galleryadv > div:hover .price-overlay {
+    opacity: 1; /* Show price on hover */
+}
+
+
+
+
+.testimonials{
+    margin:100px 100px 50px 100px;
+}
+.first1{
+    font-size: 4em;
+    
+    
+}
+
+.first2{
+    font-size: 2em;
+}
+
+.test1, .test2, .test3{
+    height:300px;
+    width:300px;
+    border:3px solid #FF7A00;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+.testimonialbox{
+    margin:0px 200px 0px 200px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+.testimonialbox>div>img{
+    border-radius: 50%;
+    margin-top: 30px;
+}
+
+.footflex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 40px;
+
+}
+footer{
+    background-color: #6E7F77;
+    height:400px;
+}
+.footinfo1{
+    color:white;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 1.4em;
+    
+}
+.footinfo{
+    text-align: left;
+    color:white;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
