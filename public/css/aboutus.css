@@ -1,0 +1,281 @@
+/* General Styles */
+*{
+    padding: 0;margin: 0;
+    
+    
+}
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:105px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+.label{
+    font-size: 3.5em;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 180px 1150px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.red{
+    color:#622b04;
+}
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    color:white;
+    
+}
+hr{
+    color:white;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.main {
+    padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 300px;
+    background-color: #A24705;
+    color: white;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Mission Section */
+.mission {
+    padding: 60px 20px;
+    background-color: #fdfdfd;
+}
+
+.mission h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.underline {
+    width: 100px;
+    height: 4px;
+    background-color: #A24705;
+    margin: 0 auto 50px;
+}
+
+.mission-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.mission-text {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+.mission-text h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+}
+
+.mission-text p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.view-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #A24705;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.mission-image {
+    flex-basis: 40%;
+    height: 300px;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.mission-content.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Teachers Section */
+.teachers {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.teachers h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.teacher-carousel {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.teacher {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.teacher img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.teacher-info h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.teacher.featured img {
+    width: 100%;
+}
+
+/* Why it Works Section */
+.why-it-works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.why-it-works h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.feature {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+.feature-icon.personalized-learning {
+    background-color: #ffeb3b;
+}
+
+.feature-icon.trusted-content {
+    background-color: #03a9f4;
+}
+
+.feature-icon.empower-teachers {
+    background-color: #4caf50;
+}
+
+.feature h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1em;
+}
+
+/* Footer */
+.footflex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 40px;
+
+}
+footer{
+    background-color: #6E7F77;
+    height:400px;
+}
+.footinfo1{
+    color:white;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 1.4em;
+    
+}
+.footinfo{
+    text-align: left;
+    color:white;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
