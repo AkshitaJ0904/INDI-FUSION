@@ -1,16 +1,20 @@
 INDI-Fusion is an e-commerce platform designed to empower emerging talents in Indian fashion, pottery, paintings, couture, jewelry, and handlooms. The platform not only provides these artisans with a space to showcase their unique creations but also integrates cutting-edge AR technology to enhance the shopping experience for international buyers.
 
-Tech Stack Frontend: JavaScript, EJS (Embedded JavaScript Templating) Backend: Node.js Database: MongoDB Data Handling: JSON
+Tech Stack
+Frontend: JavaScript, EJS (Embedded JavaScript Templating)
+    Backend: Node.js
+    Database: MongoDB
+    Data Handling: JSON
 
 User interface of the Website:
-![image](https://github.com/user-attachments/assets/38afd50d-a0a2-4fd8-b1ee-9117b46f28b5)
-![image](https://github.com/user-attachments/assets/df4fbaed-01d5-4057-a2e6-755cff98f152)
-![image](https://github.com/user-attachments/assets/72dc7bae-32cd-4f49-85c0-ef74c44c86ae)
-![image](https://github.com/user-attachments/assets/a1f55c00-0eb7-48a3-8535-05e12a6af25e)
-![image](https://github.com/user-attachments/assets/4587807c-843c-437a-ba76-0667772746dc)
-![image](https://github.com/user-attachments/assets/7ccf0738-24e3-4912-8972-3c4214ffb84b)
-![image](https://github.com/user-attachments/assets/53b97ea8-4d93-42f9-98f6-29e9fb61cb34)
+
+![WhatsApp Image 2025-01-01 at 14 54 25_28084e66](https://github.com/user-attachments/assets/4a31fd2c-dd22-4ea2-8f9c-5ca131dca032)
+![WhatsApp Image 2025-01-01 at 14 53 54_b43fd0dc](https://github.com/user-attachments/assets/f85b8420-a933-4663-a023-3d43508abd9b)
+![WhatsApp Image 2025-01-01 at 14 52 56_4548adb5](https://github.com/user-attachments/assets/b170a2d8-ae7e-48e1-b5bd-7e1b1ef6c5c2)
+![WhatsApp Image 2025-01-01 at 14 55 08_9ff77b01](https://github.com/user-attachments/assets/81a2d33f-e4ac-439f-9085-1814b0d6539a)
+![WhatsApp Image 2025-01-01 at 14 59 22_22b8e8fc](https://github.com/user-attachments/assets/84f8e0b7-2b8b-4592-8701-4c8d8accff80)
+![WhatsApp Image 2025-01-01 at 14 59 55_f8cbe742](https://github.com/user-attachments/assets/7f82e6fd-ec45-490a-be67-9b2cadbb3cbc)
+![WhatsApp Image 2025-01-01 at 15 00 47_9c156eb3](https://github.com/user-attachments/assets/c980c514-75c3-401a-9916-0bae099f1b60)
+![WhatsApp Image 2025-01-01 at 15 02 15_51e69c3d](https://github.com/user-attachments/assets/690136ac-8bc0-44d5-b5f4-0a00ac68333e)
 
 
-
-# INDI-FUSION
