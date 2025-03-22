@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/itemspage2.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="blackcontainer"></div>
+      <div class="redcontainer">
+        <div class="flexing">
+        <div class="searchbut"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg></div>
+        <div class="searchbar">What are you looking for?</div>
+        <div class="label">INDI Fusion</div>
+        <div class="currency">India-INR</div>
+        
+        <div class="profileicon">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </div>
+        <div class="heartbutton">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+            />
+          </svg>
+        </div>
+        <div class="cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-cart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+            />
+          </svg>
+        </div>
+      </div>
+    
+    <hr >
+        <div class="bar">
+          <div class="fashion">Fashion</div>
+          <div class="artgallery">Art Gallery</div>
+          <div class="homedecor">Home Decor</div>
+          <div class="bestsell">Best Seller</div>
+          <div class="about">About Us</div>
+        </div>
+        
+      
+    </header> -->
+    <%- include('partials/header')%>
+    <main>
+
+      
+      
+
+      <div class="shopgrid">
+
+        <div class="one">
+          <div class="filterbox">
+            <div class="filterhead"><b>HOME/Designer Lehenga</b></div>
+            <div class="refineby"><b>Refine By</b></div>
+            <div class="productcat">PRODUCT CATEGORY</div>
+            <div class="paintings"><input type="checkbox">Paintings</div>
+            <div class="lehengas"><input type="checkbox">Designer Lehenga</div>
+            <div class="pottery"><input type="checkbox">Pottery</div>
+            <div class="jewellery"><input type="checkbox">Jewellery</div>
+            <div class="accessories"><input type="checkbox">Accessories</div>
+      
+            <div class="filterbyprice">FILTER BY PRICE</div>
+            <div class="range">$0-$50,000,00</div>
+            <div class="pricerange"><input type="range"></div>
+            <div class="applybutton"><button type="button" class="buttons">Apply</button></div>
+            
+            <div class="orderby">ORDER BY</div>
+            <div class="default"><input type="checkbox">Default</div>
+            <div class="reviewcount"><input type="checkbox">Review Count</div>
+            <div class="popularity"><input type="checkbox">Popularity</div>
+            <div class="averagerating"><input type="checkbox">Average Rating</div>
+            <div class="newness"><input type="checkbox">Newness</div>
+            <div class="price1"><input type="checkbox">Price: Low to High</div>
+            <div class="price2"><input type="checkbox">Price: High to Low</div>
+            <div class="productname"><input type="checkbox">Product Name</div>
+            
+            <div class="filterbyreviews">FILTER BY REVIEWS</div>
+            <div class="fivestar"><input type="checkbox">★★★★★</div>
+            <div class="fourstar"><input type="checkbox">★★★★☆</div>
+            <div class="threestar"><input type="checkbox">★★★☆☆</div>
+            <div class="twostar"><input type="checkbox">★★☆☆☆</div>
+            <div class="onestar"><input type="checkbox">★☆☆☆☆</div>
+            <div class="clearbutton"><button type="button" class="buttons">Clear Filters</button></div>
+          </div>
+        </div>
+
+        <!-- //--------------------------------------------------------------- -->
+        <!-- <div class="product two">
+          <img src="artgalim2.png" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product three">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product four">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product five">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product six">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product seven">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product eight">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product nine">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+        <div class="product ten">
+          <img src="" alt="product-image">
+          <div class="d1in"></div>
+        </div>
+      </div> -->
+
+      <!-- ---------------------------------------------------------------------------- -->
+        <!-- Product grid items -->
+        <div class="shopgrid">
+        <div class="first">
+            <img src="assets\artgalim1.png" alt="product-image">
+            <a href="views\artgalleryproduct.ejs" target="_self" class="blackanchor"> <div class="one1">
+              <p class="red">Painting 1</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div></a>
+          </div>
+          <div class="second">
+            <img src="assets\artgalim2.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 2</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="third">
+            <img src="assets\artgalim3.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 3</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="fourth">
+            <img src="assets\artgalim4.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 4</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="fifth">
+            <img src="assets\artgalim5.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 5</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="sixth">
+            <img src="assets\artgalim6.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 6</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="seventh">
+            <img src="assets\artgalim7.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 7</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="eight">
+            <img src="assets\artgalim8.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 8</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+          <div class="ninth">
+            <img src="assets\artgalim9.jpg" alt="product-image">
+            <div class="one1">
+              <p class="red">Painting 9</p>
+              <p class="black">$49.9</p>
+              <p class="black">Artist</p>
+            </div>
+          </div>
+        </div>
+      
+    </main>
+    <%- include('partials/footer')%>
+    <!-- <footer>
+      <div class="footflex">
+        <div class="oneflex">
+          <p class="footinfo1"><b>INDI-Fusion</b></p>
+          <p class="footinfo">Subscribe</p>
+          <p class="footinfo">Get 10% off on your first order</p>
+          <p class="footinfo">  <label for="fname">Mail ID:</label>
+            <input type="text" id="fname" name="fname"><br></p>
+        </div>
+        <div class="twoflex">
+          <p class="footinfo1"><b>Account</b></p>
+          <p class="footinfo">My Account</p>
+          <p class="footinfo">Login/Register</p>
+          <p class="footinfo">Wishlist</p>
+          <p class="footinfo">Shop</p>
+        </div>
+        <div class="threeflex">
+          <p class="footinfo1"><b>Quick Link</b></p>
+          <p class="footinfo">Terms of Use</p>
+          <p class="footinfo">FAQ</p>
+          <p class="footinfo">Contact</p>
+        </div>
+        <div class="fourflex">
+          <p class="footinfo1"><b>Support</b></p>
+          <p class="footinfo">indifusion@gmail.com</p>
+          <p class="footinfo">+88015-88888-99999</p>
+        </div>
+      </div>
+    </footer> -->
+    <script src="/js/artgallery.js"></script>
+</body>
+</html>

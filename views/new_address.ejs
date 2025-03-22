@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDI-Fusion - Add New Address</title>
+    <link rel="stylesheet" href="/css/new_address.css">
+</head>
+<body>
+    <!-- <header>
+        <div class="blackcontainer"></div>
+        <div class="redcontainer">
+          <div class="flexing">
+          <div class="searchbut"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></div>
+          <div class="searchbar">What are you looking for?</div>
+          <div class="label">INDI Fusion</div>
+          <div class="currency">India-INR</div>
+          
+          <div class="profileicon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-circle"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+              <path
+                fill-rule="evenodd"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+              />
+            </svg>
+          </div>
+          <div class="heartbutton">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-heart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"
+              />
+            </svg>
+          </div>
+          <div class="cart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cart-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+              />
+            </svg>
+          </div>
+        </div>
+      
+      <hr >
+          <div class="bar">
+            <div class="fashion">Fashion</div>
+            <div class="artgallery">Art Gallery</div>
+            <div class="homedecor">Home Decor</div>
+            <div class="bestsell">Best Seller</div>
+            <div class="about">About Us</div>
+          </div>
+          
+        
+      </header> -->
+      <%- include('partials/header')%>
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li>Account Dashboard</li>
+                <li>Account Information</li>
+                <li class="active">Address Book</li>
+                <li>My Orders</li>
+                <li>My Wishlist</li>
+            </ul>
+        </aside>
+
+        <section class="content">
+            <h1>ADD NEW ADDRESS</h1>
+            <form>
+                <h2>CONTACT INFORMATION</h2>
+                <div class="form-group">
+                    <label for="first-name">First name*</label>
+                    <input type="text" id="first-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last name*</label>
+                    <input type="text" id="last-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="fax">Fax</label>
+                    <input type="tel" id="fax">
+                </div>
+
+                <h2>ADDRESS</h2>
+                <div class="form-group">
+                    <label for="street">Street Address*</label>
+                    <input type="text" id="street" required>
+                </div>
+                <div class="form-group">
+                    <label for="country">Country*</label>
+                    <input type="text" id="country" required>
+                </div>
+                <div class="form-group">
+                    <label for="state">State/Province*</label>
+                    <input type="text" id="state" required>
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip/Postal Code*</label>
+                    <input type="text" id="zip" required>
+                </div>
+
+                <button type="submit">Save Address</button>
+            </form>
+        </section>
+    </main>
+    <%- include('partials/footer')%>
+    <!-- <footer>
+        <div class="footflex">
+          <div class="oneflex">
+            <p class="footinfo1"><b>INDI-Fusion</b></p>
+            <p class="footinfo">Subscribe</p>
+            <p class="footinfo">Get 10% off on your first order</p>
+            <p class="footinfo">  <label for="fname">Mail ID:</label>
+              <input type="text" id="fname" name="fname"><br></p>
+          </div>
+          <div class="twoflex">
+            <p class="footinfo1"><b>Account</b></p>
+            <p class="footinfo">My Account</p>
+            <p class="footinfo">Login/Register</p>
+            <p class="footinfo">Wishlist</p>
+            <p class="footinfo">Shop</p>
+          </div>
+          <div class="threeflex">
+            <p class="footinfo1"><b>Quick Link</b></p>
+            <p class="footinfo">Terms of Use</p>
+            <p class="footinfo">FAQ</p>
+            <p class="footinfo">Contact</p>
+          </div>
+          <div class="fourflex">
+            <p class="footinfo1"><b>Support</b></p>
+            <p class="footinfo">indifusion@gmail.com</p>
+            <p class="footinfo">+88015-88888-99999</p>
+          </div>
+        </div>
+      </footer> -->
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDI-Fusion Shopping Cart</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            font-family: 'Arial', sans-serif;
+            background: #F5F5F5;
+            color: #333;
+        }
+
+        .logo {
+            font-family: 'Amita', cursive;
+            font-size: 48px;
+            margin: 20px 0;
+            color: #A24705;
+        }
+
+        .container1 {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background-color: #A24705;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        /* Sidebar Section */
+        .sidebar {
+            width: 250px;
+            height:220px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li {
+            padding: 12px;
+            cursor: pointer;
+            color: #333;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li.active, .sidebar ul li:hover {
+            background-color: #A24705;
+            color: white;
+            padding-left: 15px;
+        }
+
+        /* Shopping Cart Section */
+        .shopping-cart {
+            flex: 2;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-right: 300px;
+        }
+
+        .cart-item {
+            margin: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cart-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cart-item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .item-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .item-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .item-price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #A24705;
+        }
+
+        /* Order Summary Section */
+        .order-summary {
+            width: 300px;
+            background-color: #F9F9F9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 60px;
+            height: fit-content;
+        }
+
+        .free-delivery {
+            color: #3C5A3D;
+            margin-bottom: 15px;
+        }
+
+        .subtotal {
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .gift {
+            margin-top: 10px;
+        }
+
+        .buy-button {
+            background-color: #ad5f17;
+            color: white;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #A24705;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .footflex{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 40px;
+
+}
+footer{
+    background-color: #6E7F77;
+    height:400px;
+}
+.footinfo1{
+    color:white;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 1.4em;
+    
+}
+.footinfo{
+    text-align: left;
+    color:white;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:110px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+.label{
+    font-size: 3.5em;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 200px 1130px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    color:white;
+    text-decoration: none;
+    
+}
+.fashion , .homedecor , .bestsell , .about{
+    color:white;
+    text-decoration: none;
+}
+.artgallery{
+    color:white;
+    text-decoration: none;
+}
+hr{
+    color:white;
+}
+        
+    </style>
+</head>
+<body>
+
+    <!-- <header>
+        <div class="blackcontainer"></div>
+        <div class="redcontainer">
+          <div class="flexing">
+            <div class="searchbut"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg></div>
+            <div class="searchbar">What are you looking for?</div>
+            <div class="label">INDI Fusion</div>
+            <div class="currency">India-INR</div>
+            <a href="/loginpage" target="_blank">
+              <div class="profileicon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="white" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+    
+              </div>
+            </a>
+    
+            <a href="/wishlist" target="_blank">
+            <div class="heartbutton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
+          </a>
+          <a href="/shoppingcart" target="_blank">
+            <div class="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </div>
+          </div>
+        </a>
+          <hr>
+          <div class="bar">
+            <a href="/fashionpage" target="_blank">
+              <div class="fashion">Fashion</div></a>
+    
+            <a href="/artgallery" target="_blank">
+            <div class="artgallery">Art Gallery</div></a>
+    
+            <a href="/home_decor" target="_blank">
+            <div class="homedecor">Home Decor</div></a>
+    
+            <a href="/bestseller" target="_blank">
+            <div class="bestsell">Best Seller</div></a>
+    
+            <a href="/aboutus" target="_blank">
+            <div class="about">About Us</div></a>
+          </div>
+    
+    
+      </header> -->
+      <%- include('partials/header')%>
+
+    <div class="container1">
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <ul>
+                <li>Account Dashboard</li>
+                <li>Account Information</li>
+                <li>Address Book</li>
+                <li class="active">Shopping Cart</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content Section (Shopping Cart and Order Summary) -->
+        <div class="main-content">
+            <section class="shopping-cart">
+                <h2>Home / Shopping Cart</h2>
+
+                <!-- Cart Items -->
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="assets/image 20.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Prapti Handicrafts Handmade Boho Beaded Choker Necklace Set</div>
+                        <div>Qty: 1</div>
+                        <div class="item-price">$40</div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="assets/image 20.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Sara Carpets Handmade Woollen Geometric Carpet</div>
+                        <div>Qty: 1</div>
+                        <div class="item-price">$40</div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="assets/image 20.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Prapti Handicrafts Handmade Boho Beaded Choker Necklace Set</div>
+                        <div>Qty: 1</div>
+                        <div class="item-price">$40</div>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <img src="assets/image 20.jpg" alt="Product Image">
+                    </div>
+                    <div class="item-details">
+                        <div class="item-title">Sara Carpets Handmade Woollen Geometric Carpet</div>
+                        <div>Qty: 1</div>
+                        <div class="item-price">$40</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Order Summary Section -->
+            <div class="order-summary">
+                <div class="free-delivery">
+                    <input type="checkbox" checked>
+                    <span>Your First Order Qualifies for Free Delivery</span><br>
+                    <span>Select this option at Checkout</span>
+                </div>
+                <div class="subtotal">
+                    <strong>Subtotal (4 items):</strong> $160
+                </div>
+                <div class="gift">
+                    <input type="checkbox">
+                    <span>This order contains a gift</span>
+                </div>
+                <br>
+                <button class="buy-button">Proceed to Buy</button>
+            </div>
+        </div>
+    </div>
+    <%- include('partials/footer')%>
+    <!-- Footer Section -->
+    <!-- <footer>
+        <div class="footflex">
+          <div class="oneflex">
+            <p class="footinfo1"><b>INDI-Fusion</b></p>
+            <p class="footinfo">Subscribe</p>
+            <p class="footinfo">Get 10% off on your first order</p>
+            <p class="footinfo"> <label for="fname">Mail ID:</label>
+              <input type="text" id="fname" name="fname"><br>
+            </p>
+          </div>
+          <div class="twoflex">
+            <p class="footinfo1"><b>Account</b></p>
+            <p class="footinfo">My Account</p>
+            <p class="footinfo">Login/Register</p>
+            <p class="footinfo">Wishlist</p>
+            <p class="footinfo">Shop</p>
+          </div>
+          <div class="threeflex">
+            <p class="footinfo1"><b>Quick Link</b></p>
+            <p class="footinfo">Terms of Use</p>
+            <p class="footinfo">FAQ</p>
+            <p class="footinfo">Contact</p>
+          </div>
+          <div class="fourflex">
+            <p class="footinfo1"><b>Support</b></p>
+            <p class="footinfo">indifusion@gmail.com</p>
+            <p class="footinfo">+88015-88888-99999</p>
+          </div>
+        </div>
+      </footer> -->
+</body>
+</html>

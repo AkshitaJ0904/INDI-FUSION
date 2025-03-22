@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    
+      <style>
+        /* Resetting basic styles */
+        *{
+    padding: 0;margin: 0;
+    
+    
+}
+
+body{
+    background-color: #F3E9D5;
+}
+.blackcontainer{
+    background-color: #424040;
+    height:25px;
+}
+.redcontainer{
+    background-color: #a24705;
+    color:white;
+    height:105px;
+    padding:5px;
+    
+
+}
+.container{
+    height:748px;
+    width:748px;
+    background-color: black;
+    display:grid;
+    gap:0.3rem;
+    grid-template-columns: 320px 198px 153px 50px;
+    grid-template-rows: 414px 130px 155px 22px;
+    
+    
+    
+}
+.label{
+    font-size: 3.5em;
+}
+
+.flexing{
+    display:grid;
+    height:80px;
+    grid-template-columns: 20px 180px 1150px 90px 30px 30px 30px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.bar{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:70px;
+    color:white;
+    text-decoration: none;
+    
+}
+.fashion , .homedecor , .bestsell , .about{
+    color:white;
+    text-decoration: none;
+}
+.artgallery{
+    color:white;
+    text-decoration: none;
+}
+hr{
+    color:white;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.sidebar li a:hover {
+    background-color: #ddd;
+}
+
+.sidebar li.active {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Main Content Styles */
+.wishlist-content {
+    flex-grow: 1;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-content h2 {
+    font-family: 'Amita', cursive;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.wishlist-row {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+    gap: 20px; /* Spacing between items */
+    justify-content: center; /* Center-align the items */
+}
+
+.item {
+    text-align: center;
+    width: 200px; /* Fixed width for items */
+}
+
+.item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.cart-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.small-text {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Wishlist Panel Styles */
+#wishlist-panel {
+    margin-top: 30px;
+}
+
+.wishlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wishlist-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.wishlist-item-name {
+    flex-grow: 1;
+    font-size: 18px;
+}
+
+.remove-btn {
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: #c9302c;
+}
+
+/* Footer Styles */
+.footflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+    line-height: 40px;
+}
+
+footer {
+    background-color: #6E7F77;
+    height: 400px;
+}
+
+.footinfo1 {
+    color: white;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 1.4em;
+}
+
+.footinfo {
+    text-align: left;
+    color: white;
+    font-size: larger;
+}
+
+/* Sidebar active link */
+.sidebar li.active a {
+    color: white;
+    background-color: #a24705;
+}
+
+/* Button Styling */
+.add-to-list {
+    padding: 8px 16px;
+    background-color: #a24705;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-to-list:hover {
+    background-color: #8e3e04;
+}
+.wholeflex{
+    display:flex;
+    flex-direction: row;
+}
+h1{
+    margin-left: 270px;
+    padding:10px;
+}
+
+/* --------------------------------------------------------------- */
+
+/* Styling for the wishlist container */
+.products {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-evenly; /* Space items evenly with equal gaps */
+    gap: 20px; /* Adds space between items */
+    padding: 20px; /* Adds padding around the container */
+    background-color: #fff; /* Optional: background for the products section */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: subtle shadow effect */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Styling for each item */
+.item {
+    display: flex;
+    flex-direction: column; /* Stack the child elements vertically */
+    align-items: center; /* Center-align content */
+    justify-content: space-between; /* Space elements within the item */
+    width: 250px; /* Fixed width for consistency */
+    background-color: #f9f9f9; /* Light background for items */
+    padding: 10px; /* Padding around item content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text alignment */
+}
+
+/* Styling for the images */
+.item img {
+    width: 100%; /* Make the image take full width of the item */
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure the image fits well without distortion */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space below the image */
+}
+
+/* Styling for the title and description */
+.item h3 {
+    font-size: 18px; /* Slightly larger font for titles */
+    color: #333; /* Darker text color */
+    margin-bottom: 5px; /* Space below the title */
+}
+
+.item p {
+    font-size: 14px; /* Smaller text for descriptions */
+    color: #666; /* Gray text for description */
+    margin-bottom: 10px; /* Space below the description */
+}
+
+/* Styling for the button */
+.item .but {
+    padding: 8px 16px; /* Button padding */
+    background-color: #a24705; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.item .but:hover {
+    background-color: #8e3e04; /* Darker background on hover */
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* Wishlist panel styles */
+#wishlistPanel {
+    margin-top: 20px;
+}
+
+.wishlist-item {
+    display: flex;
+    flex-direction: row; /* Horizontal layout for image and text */
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 15px; /* Space between items */
+    background-color: #fff;
+    margin-right: 100px;
+    margin-left: 280px;
+
+}
+
+.wishlist-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    margin-right: 16px;
+}
+
+.wishlist-item .wishlist-details {
+    flex-grow: 1; /* Allow details to expand */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.wishlist-item .wishlist-details h3 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.wishlist-item .wishlist-details p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.wishlist-item .remove-btn {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.wishlist-item .remove-btn:hover {
+    background-color: #c9302c;
+}
+.myselitems{
+    margin-left: 270px;
+    padding:20px;
+}
+.account{
+    margin-left: 20px;
+}
+
+
+      </style>
+    
+</head>
+<body>
+    <header>
+        <div class="blackcontainer"></div>
+        <div class="redcontainer">
+          <div class="flexing">
+            <div class="searchbut"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-search" viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              </svg></div>
+            <div class="searchbar">What are you looking for?</div>
+            <div class="label">INDI Fusion</div>
+            <div class="currency">India-INR</div>
+            <a href="/loginpage" target="_self">
+              <div class="profileicon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" color="white" fill="currentColor"
+                  class="bi bi-person-circle" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+                </svg>
+    
+              </div>
+            </a>
+    
+            <a href="/wishlist" target="_self">
+            <div class="heartbutton">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+              </svg>
+            </div>
+          </a>
+          <a href="/shoppingcart" target="_self">
+            <div class="cart">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+              </svg>
+            </div>
+          </div>
+        </a>
+          <hr>
+          <div class="bar">
+            <a href="/fashionpage" target="_self">
+              <div class="fashion" >Fashion</div></a>
+    
+            <a href="/artgallery" target="_self">
+            <div class="artgallery">Art Gallery</div></a>
+    
+            <a href="/home_decor" target="_self">
+            <div class="homedecor">Home Decor</div></a>
+    
+            <a href="/bestseller" target="_self">
+            <div class="bestsell">Best Seller</div></a>
+    
+            <a href="/aboutus" target="_self">
+            <div class="about">About Us</div></a>
+          </div>
+    
+    
+      </header>
+      <!-- <%- include('partials/header')%> -->
+
+<main>
+    <h1>My Wishlist</h1>
+    <div class="wholeflex">
+
+    <!-- Sidebar -->
+<div class="sidebar">
+    <h2 class="account">Account</h2>
+    <ul>
+        <li><a href="#">Account Dashboard</a></li>
+        <li><a href="#">Account Information</a></li>
+        <li><a href="#">Address Book</a></li>
+        <li><a href="#">My Orders</a></li>
+        <li><a href="#">My Wishlist</a></li>
+    </ul>
+</div>
+    
+
+    <!-- Products container -->
+    <div class="products">
+        <!-- First Row -->
+        <div class="wishlist-row">
+            <!-- Wishlist item 1 -->
+            <div id="product1" class="item">
+                <img id="item1-img" src="./assets/artgalim1.png" alt="Abstract Oil Painting">
+                <h3 id="item1-title">Abstract Oil Painting</h3>
+                <p id="item1-description" class="small-text">Artist Signed</p>
+                <input type="button" value="Add to List" id="1" class="but"/>
+            </div>
+
+            <!-- Wishlist item 2 -->
+            <div id="product2" class="item">
+                <img id="item2-img" src="./assets/artgalim2.jpg" alt="Elegant Embroidered Saree">
+                <h3 id="item2-title">Elegant Embroidered Saree</h3>
+                <p id="item2-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="2" class="but"/>
+            </div>
+
+            <!-- Wishlist item 3 -->
+            <div id="product3" class="item">
+                <img id="item3-img" src="./assets/artgalim3.jpg" alt="Vintage Hand-painted Canvas">
+                <h3 id="item3-title">Vintage Hand-painted Canvas</h3>
+                <p id="item3-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="3" class="but"/>
+            </div>
+
+            <!-- Wishlist item 4 -->
+            <div id="product4" class="item">
+                <img id="item4-img" src="./assets/artgalim4.jpg" alt="Elegant Embroidered Saree">
+                <h3 id="item4-title">Elegant Embroidered Saree</h3>
+                <p id="item4-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="4" class="but"/>
+            </div>
+        </div>
+
+        <!-- Second Row -->
+        <div class="wishlist-row">
+            <!-- Wishlist item 5 -->
+            <div id="product5" class="item">
+                <img id="item5-img" src="./assets/artgalim5.jpg" alt="Handcrafted Gold Necklace">
+                <h3 id="item5-title">Handcrafted Gold Necklace</h3>
+                <p id="item5-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="5" class="but"/>
+            </div>
+
+            <!-- Wishlist item 6 -->
+            <div id="product6" class="item">
+                <img id="item6-img" src="./assets/artgalim6.jpg" alt="Silver Filigree Earrings">
+                <h3 id="item6-title">Silver Filigree Earrings</h3>
+                <p id="item6-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="6" class="but"/>
+            </div>
+
+            <!-- Wishlist item 7 -->
+            <div id="product7" class="item">
+                <img id="item7-img" src="./assets/artgalim7.jpg" alt="Vintage Hand-painted Canvas">
+                <h3 id="item7-title">Vintage Hand-painted Canvas</h3>
+                <p id="item7-description" class="small-text">Artist Signed</p>
+                <input type="button" value="Add to List" id="7" class="but"/>
+            </div>
+
+            <!-- Wishlist item 8 -->
+            <div id="product8" class="item">
+                <img id="item8-img" src="./assets/artgalim8.jpg" alt="Elegant Embroidered Saree">
+                <h3 id="item8-title">Elegant Embroidered Saree</h3>
+                <p id="item8-description" class="small-text">In Stock</p>
+                <input type="button" value="Add to List" id="8" class="but"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+
+<h2 class="myselitems">My Selected Items</h2>
+    <div id="selectedWishlistPanel" class="grid wishlist-grid"></div>
+    <%- include('partials/footer')%>
+<!-- <footer>
+    <div class="footflex">
+      <div class="oneflex">
+        <p class="footinfo1"><b>INDI-Fusion</b></p>
+        <p class="footinfo">Subscribe</p>
+        <p class="footinfo">Get 10% off on your first order</p>
+        <p class="footinfo"> <label for="fname">Mail ID:</label>
+          <input type="text" id="fname" name="fname"><br>
+        </p>
+      </div>
+      <div class="twoflex">
+        <p class="footinfo1"><b>Account</b></p>
+        <p class="footinfo">My Account</p>
+        <p class="footinfo">Login/Register</p>
+        <p class="footinfo">Wishlist</p>
+        <p class="footinfo">Shop</p>
+      </div>
+      <div class="threeflex">
+        <p class="footinfo1"><b>Quick Link</b></p>
+        <p class="footinfo">Terms of Use</p>
+        <p class="footinfo">FAQ</p>
+        <p class="footinfo">Contact</p>
+      </div>
+      <div class="fourflex">
+        <p class="footinfo1"><b>Support</b></p>
+        <p class="footinfo">indifusion@gmail.com</p>
+        <p class="footinfo">+88015-88888-99999</p>
+      </div>
+    </div>
+  </footer> -->
+
+<!-- JavaScript -->
+<script src="/frontend/js/wishlist.js"></script>
+
+</body>
+</html>
