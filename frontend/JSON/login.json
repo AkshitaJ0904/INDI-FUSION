@@ -1,0 +1,33 @@
+{
+    "loginConfig": {
+      "apiEndpoint": "http://localhost:3000",
+      "oauth": {
+        "facebook": {
+          "clientId": "your_facebook_client_id",
+          "redirectUri": "http://localhost:3000/auth/facebook/callback"
+        },
+        "google": {
+          "clientId": "your_google_client_id",
+          "redirectUri": "http://localhost:3000/auth/google/callback"
+        }
+      },
+      "validation": {
+        "phone": {
+          "minLength": 10,
+          "maxLength": 10,
+          "pattern": "^[0-9]{10}$"
+        },
+        "email": {
+          "pattern": "^[^@]+@[^@]+\\.[^@]+$"
+        }
+      }
+    },
+    "api": {
+      "endpoints": {
+        "login": "/api/auth/login",
+        "register": "/api/auth/register",
+        "socialLogin": "/api/auth/social",
+        "verifyToken": "/api/auth/verify"
+      }
+    }
+  }

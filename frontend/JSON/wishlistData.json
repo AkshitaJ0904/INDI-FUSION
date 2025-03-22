@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Abstract Oil Painting",
+      "description": "Artist Signed",
+      "imgSrc": "./pic1.png"
+    },
+    {
+      "id": 2,
+      "title": "Elegant Embroidered Saree",
+      "description": "In Stock",
+      "imgSrc": "./image 20.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Vintage Hand-painted Canvas",
+      "description": "In Stock",
+      "imgSrc": "./Pic2.png"
+    },
+    {
+      "id": 4,
+      "title": "Elegant Embroidered Saree",
+      "description": "In Stock",
+      "imgSrc": "./image 20.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Handcrafted Gold Necklace",
+      "description": "In Stock",
+      "imgSrc": "./Pic3.png"
+    },
+    {
+      "id": 6,
+      "title": "Silver Filigree Earrings",
+      "description": "In Stock",
+      "imgSrc": "./Depth 7, Frame 4.png"
+    },
+    {
+      "id": 7,
+      "title": "Vintage Hand-painted Canvas",
+      "description": "Artist Signed",
+      "imgSrc": "./Depth 7, Frame 5.png"
+    },
+    {
+      "id": 8,
+      "title": "Elegant Embroidered Saree",
+      "description": "In Stock",
+      "imgSrc": "./image 20.jpg"
+    }
+  ]
+  

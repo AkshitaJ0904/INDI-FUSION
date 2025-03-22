@@ -1,0 +1,39 @@
+{
+    "dresses": [
+      {
+        "image": "http://127.0.0.1:5500/assets/dress1.jpg",
+        "title": "COUTURE",
+        "description": "Ivory Embroidery Saree Set",
+        "price": "$9494"
+      },
+      {
+        "image": "http://127.0.0.1:5500/assets/dress2.jpg",
+        "title": "COUTURE",
+        "description": "Ivory Embroidery Saree Set",
+        "price": "$9494"
+      },
+      {
+        "image": "http://127.0.0.1:5500/assets/dress3.jpg",
+        "title": "COUTURE",
+        "description": "Ivory Embroidery Saree Set",
+        "price": "$9494"
+      }
+    ],
+    "pots": [
+      {
+        "image": "../public/assets/pot1im.jpg",
+        "description": "Beautiful vase",
+        "price": "$200"
+      },
+      {
+        "image": "../public/assets/potim2.jpg",
+        "description": "Beautiful vase",
+        "price": "$200"
+      },
+      {
+        "image": "../public/assets/potim3.jpg",
+        "description": "Beautiful vase",
+        "price": "$200"
+      }
+    ]
+}
